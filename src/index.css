@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: 'Helvetica_Neue';
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica_Bold';
+    src: url('./assets/fonts/HelveticaNeue/HelveticaNeueBd.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Helvetica_Neue';
+    src: url('./assets/fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Helvetica_Regular';
+    src: url('./assets/fonts/HelveticaNeue/HelveticaNeue_Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Helvetica_Medium';
+    src: url('./assets/fonts/HelveticaNeue/HelveticaNeue_Medium.ttf') format('truetype');
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0px solid white;
+  /* -webkit-text-fill-color: white; */
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+  /* color: black; */
+}
